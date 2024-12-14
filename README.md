@@ -38,6 +38,21 @@ python scraper.py
 ```
 The extracted data will be saved in Faculty_Emails.csv.
 
+## Folder Structure
+```
+UT-ECE-Faculty-Email-Scraper/
+│
+├── crawler.py             # Crawler script
+├── scraper.py             # Scraper script
+├── requirements.txt       # Dependencies
+├── Faculty_Emails.csv     # Output CSV file with extracted data
+├── faculty_members/       # Folder containing downloaded HTML files
+│   ├── member1.html
+│   ├── member2.html
+│   └── ...
+└── README.md              # Project documentation
+```
+
 ## Output
 The extracted data will be saved in a CSV file named Faculty_Emails.csv in the following format:
 
