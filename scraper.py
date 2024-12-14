@@ -1,8 +1,8 @@
-import re
 import os
+import re
 
-from bs4 import BeautifulSoup
 import pandas as pd
+from bs4 import BeautifulSoup
 
 folder_path = "faculty_members"
 
@@ -20,7 +20,6 @@ for page in os.listdir("faculty_members"):
 
             mail = soup.find("a", href=re.compile("mailto"))
             mail = mail.contents[0]
-
 
             data.append((name, mail))
 

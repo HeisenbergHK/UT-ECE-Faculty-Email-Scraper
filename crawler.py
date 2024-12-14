@@ -29,8 +29,3 @@ for url in faculty_urls:
     print(name)
     with open(file=f"faculty_members/{name}.html", mode="w", encoding="utf-8") as page:
         page.write(response.text)
-
-
-
-
-
